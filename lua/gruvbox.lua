@@ -264,6 +264,7 @@ local function get_groups()
     GruvboxAquaBold = { fg = colors.aqua, bold = config.bold },
     GruvboxOrange = { fg = colors.orange },
     GruvboxOrangeBold = { fg = colors.orange, bold = config.bold },
+    GruvboxHighlight = { bg = colors.bg1 },
     GruvboxRedSign = config.transparent_mode and { fg = colors.red, reverse = config.invert_signs }
       or { fg = colors.red, bg = colors.bg1, reverse = config.invert_signs },
     GruvboxGreenSign = config.transparent_mode and { fg = colors.green, reverse = config.invert_signs }
@@ -392,9 +393,9 @@ local function get_groups()
     DiagnosticVirtualTextInfo = { link = "GruvboxBlue" },
     DiagnosticVirtualTextHint = { link = "GruvboxAqua" },
     DiagnosticOk = { link = "GruvboxGreenSign" },
-    LspReferenceRead = { link = "GruvboxYellowBold" },
-    LspReferenceText = { link = "GruvboxYellowBold" },
-    LspReferenceWrite = { link = "GruvboxOrangeBold" },
+    LspReferenceRead = { link = "GruvboxHighlight" },
+    LspReferenceText = { link = "GruvboxHighlight" },
+    LspReferenceWrite = { link = "GruvboxHighlight" },
     LspCodeLens = { link = "GruvboxGray" },
     LspSignatureActiveParameter = { link = "Search" },
     gitcommitSelectedFile = { link = "GruvboxGreen" },
